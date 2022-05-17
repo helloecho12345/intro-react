@@ -2,6 +2,7 @@ import React from "react";
 import Table from "./Table";
 /*Add import statement here*/
 
+// next line takes a component's properties to create a component called App
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -45,6 +46,7 @@ class App extends React.Component {
     this.setState({ grades: grades });
   }
 
+  // In the render method of App, there are other components like <button/> which are CHILD COMPONENTS because they are all a part of its parent, App
   render() {
     let tabChoice = <div />;
 
@@ -89,7 +91,7 @@ class App extends React.Component {
       <div>
         <div className="Box Box--spacious f4">
           <div className="Box-header">
-            {/* Replace this line with the proper header code*/}
+            <h3 className="Box-title d-flex flex-justify-center">Gradebook</h3>>
           </div>
         </div>
         <nav className="UnderlineNav d-flex flex-justify-center">
