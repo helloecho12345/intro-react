@@ -51,16 +51,18 @@ class App extends React.Component {
     let tabChoice = <div />;
 
     /*Uncomment below to render assignments*/
-    /*if (this.state.buttonClicked === "assignments") {
+    // When we click the Assignments button, the list for assignments is assigned to the variable tabChoice. tabChoice is rendered in the render method.
+    if (this.state.buttonClicked === "assignments") {
       tabChoice = (
         <List
+        // create properties placeholder, currList and assign values to them
           placeholder="Add Assignment..."
           currList={this.state.assignments}
           addFunction={this.addAssignment}
           title="Assignments"
         />
       );
-    }*/
+    }
 
     /* Change below to render students*/
 
