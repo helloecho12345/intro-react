@@ -49,8 +49,6 @@ class App extends React.Component {
   // In the render method of App, there are other components like <button/> which are CHILD COMPONENTS because they are all a part of its parent, App
   render() {
     let tabChoice = <div />;
-
-   
     if (this.state.buttonClicked === "assignments") {
       tabChoice = (
         <List
