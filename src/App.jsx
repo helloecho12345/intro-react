@@ -74,7 +74,6 @@ class App extends React.Component {
         />
       );
     }*/
-
     /* Uncomment lines below to render grades*/
     /*if (this.state.buttonClicked === "grades") {
       tabChoice = (
@@ -86,12 +85,12 @@ class App extends React.Component {
         />
       );
     }*/
-
     return (
       <div>
         <div className="Box Box--spacious f4">
           <div className="Box-header">
-            <h3 className="Box-title d-flex flex-justify-center">Gradebook</h3>
+            {/* child component added to give a header */}
+          <h3 className="Box-title d-flex flex-justify-center">GradeBook</h3>
           </div>
         </div>
         <nav className="UnderlineNav d-flex flex-justify-center">
